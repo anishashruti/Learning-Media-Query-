@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+* body {
+  font-family: "Dancing Script", cursive;
+  font-size: 35px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: 10px solid #1B1717;
+  color: #EEEBDD;
+  background-color: #E23E57;
+}
+
+#size {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  font-size: 25px;
+  color: #1B1717;
+  transform: translateX(-50%);
+  color: lightblue;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    background-color: #311D3F;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    background-color: #522546;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    background-color: #88304E;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    background-color: #E23E57;
+  }
+}/*# sourceMappingURL=style.css.map */
