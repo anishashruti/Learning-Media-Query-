@@ -1,0 +1,145 @@
+* {
+    // placing Margin to left & right
+    margin: 0px 5px;
+  
+    padding: 0px;
+    box-sizing: border-box;
+  
+    body {
+      font-family: sans-serif;
+    }
+  }
+
+  .container{}
+
+  .header {
+    // height
+      height: 10%;
+    
+      display: flex;
+    // Aligning logo & menu at center
+      align-items: center;
+    
+    // space between logo & menu
+      justify-content: space-between;
+    
+      &__logo {
+        font-size: 3.5vw;
+        font-family: 'Rock Salt', cursive;
+      }
+    
+      &__menu {
+        display: flex;
+        font-size: 1.5vw;
+        font-family: 'Mate SC', serif;
+    
+    // to put gap between menu items
+        gap: 15px;
+      }
+    }
+    .main {
+        // image & text will act like a row
+        display: flex;
+        flex-direction: row;
+      
+        &__image {
+          //Adding the image
+          background-image: url("./images/coding.jpg");
+          // will cover half of screen width
+          width: 50%;
+
+          //make image fluid
+          background-size: contain;
+
+          // stop image repetition
+          background-repeat: no-repeat;
+  
+          // position the image
+          background-position: left center;
+  
+        }
+      
+        &__text {
+          // will cover half of screen width
+          width: 50%;
+          font-size: 3vw;
+          font-family: 'Mate SC', serif;
+        }
+      }
+
+.footer{
+    [class^="footer__"] {
+        img {
+          width: 3vw;
+        }
+      }
+      display: flex;
+      flex-direction: row;
+    
+    // To align icons along x-axis
+      align-items: center;
+    // placing image to the right side
+      justify-content: flex-end;
+    // Gap between icons
+      gap: 20px;
+    
+    // margin to right side of icons 
+      margin-right: 20%;
+}
+
+@media (max-width: 650px)
+{
+
+    .header {
+  
+  // To place logo at center
+      justify-content: center;
+  
+      &__logo {
+        font-size: 40px;
+      }
+  //hiding the menu on mobile device
+      &__menu {
+        display: none;
+      }
+    }
+   
+ .main {
+    &__image {
+ // Image size 
+       height: 200px;
+       width: 200px;
+       background-size: 100%;
+ 
+ // To have rounded image 
+       border-radius: 100%;
+       background-position: center;
+     }
+ 
+ // Styles for the text ->
+     &__text {
+       width: 100%;
+ 
+       &-1 {
+         display: none;
+       }
+       &-2, &-3, &-4 {
+         font-size: 30px;
+       }
+     }
+ }
+     .footer {
+        // placing icons along the X-axis
+            justify-content: center;
+            margin: 0px;
+        
+            [class^="footer__"] {
+        
+        // Resizing images for mobile layout
+              img {
+                width: 45px;
+                height: 45px;
+              }
+            }
+        }
+  }
